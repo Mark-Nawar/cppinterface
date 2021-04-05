@@ -1,11 +1,13 @@
 Package: cppinterface
 Type: Package
-Title: What the Package Does in One 'Title Case' Line
+Title: Interface C++ in R
 Version: 1.0
 Date: 2021-04-05
-Author: Your Name
-Maintainer: Your Name <your@email.com>
-Description: One paragraph description of what the package does as one or more full sentences.
+Author: Mark Nawar
+Maintainer: Mark Nawar <markadelnawar@gmail.com>
+Description: This package uses the c++ STL's sort and "algorithms"'s min_elemnt and max_elemnt. 
+             This functions are local on C++ but by using Rcpp you can interface these functions to any R user.
+             The Local c++ functions takes as an input a vector of doubles which is similar to a R vector.
 License: GPL (>= 2)
 Imports: Rcpp (>= 1.0.6)
 LinkingTo: Rcpp
