@@ -3,20 +3,22 @@
 \alias{cppinterface}
 \docType{package}
 \title{
-  A short title line describing what the package does
+  Interface c++ sort and find Max/min in R
 }
 \description{
-  A more detailed description of what the package does. A length
-  of about one to five lines is recommended.
+  This package uses the c++ STL's sort and "algorithms"'s min_elemnt and max_elemnt. 
+  This functions are local on C++ but by using Rcpp you can interface these functions to any R user.
+  The Local c++ functions takes as an input a vector of doubles which is similar to a R vector.
 }
 \details{
-  This section should provide a more detailed overview of how to use the
-  package, including the most important functions.
+  There are two fuctions in this package ```r Rsort(x,order)``` and ```r R_getMaxMin(x,choice)```
+  Rsort sorts a vector of numbers from max-min or from min-max (order=1/0)
+  R_getMaxMin gets the max/min(choice=1/0) form a R vector
 }
 \author{
-Your Name, email optional.
+Mark Nawar.
 
-Maintainer: Your Name <your@email.com>
+Maintainer: Mark Nawar <markadelnawar@gmail.com>
 }
 \references{
   This optional section can contain literature or other references for
